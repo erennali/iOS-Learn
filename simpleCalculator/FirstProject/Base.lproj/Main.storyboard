@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="İlk Sayı" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Kp-C4-z6b">
+                                <rect key="frame" x="40" y="136" width="329" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="İkinci Sayı" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ADh-zn-TUT">
+                                <rect key="frame" x="40" y="199" width="329" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARS-7W-CSl">
+                                <rect key="frame" x="60" y="280" width="35" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+"/>
+                                <connections>
+                                    <action selector="toplaClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lol-A1-3cg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnG-hp-gDH">
+                                <rect key="frame" x="147" y="280" width="32" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="-"/>
+                                <connections>
+                                    <action selector="cikarClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zHT-Gu-vU4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLq-6K-V6s">
+                                <rect key="frame" x="240" y="280" width="33" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="x"/>
+                                <connections>
+                                    <action selector="carpClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GmI-Sx-dQB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VM5-yI-Urk">
+                                <rect key="frame" x="321" y="280" width="29" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="/"/>
+                                <connections>
+                                    <action selector="bolClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vZK-bU-7rM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sonuç:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkq-vT-1B2">
+                                <rect key="frame" x="95" y="403" width="202" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hkq-vT-1B2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="6Vo-jh-g9I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Kp-C4-z6b" secondAttribute="trailing" constant="24" id="H6l-ZR-Teo"/>
+                            <constraint firstItem="Hkq-vT-1B2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jn1-7S-jh4"/>
+                            <constraint firstItem="2Kp-C4-z6b" firstAttribute="trailing" secondItem="ADh-zn-TUT" secondAttribute="trailing" id="KjQ-fF-kRd"/>
+                            <constraint firstItem="VM5-yI-Urk" firstAttribute="leading" secondItem="GLq-6K-V6s" secondAttribute="trailing" constant="48" id="Nh2-Ob-hm8"/>
+                            <constraint firstItem="2Kp-C4-z6b" firstAttribute="leading" secondItem="ADh-zn-TUT" secondAttribute="leading" id="Sai-qC-neQ"/>
+                            <constraint firstItem="ARS-7W-CSl" firstAttribute="baseline" secondItem="RnG-hp-gDH" secondAttribute="baseline" id="X6E-6g-bba"/>
+                            <constraint firstItem="ARS-7W-CSl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="aji-nn-ytl"/>
+                            <constraint firstItem="GLq-6K-V6s" firstAttribute="baseline" secondItem="VM5-yI-Urk" secondAttribute="baseline" id="axw-1i-cPI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ARS-7W-CSl" secondAttribute="bottom" constant="503" id="cYY-Tt-GC7"/>
+                            <constraint firstItem="Hkq-vT-1B2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cij-1f-E2g"/>
+                            <constraint firstItem="ADh-zn-TUT" firstAttribute="top" secondItem="2Kp-C4-z6b" secondAttribute="bottom" constant="29" id="dQi-K9-ur1"/>
+                            <constraint firstItem="2Kp-C4-z6b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="77" id="gh1-Gm-dzV"/>
+                            <constraint firstItem="2Kp-C4-z6b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="p4e-fB-Lsx"/>
+                            <constraint firstItem="Hkq-vT-1B2" firstAttribute="top" secondItem="RnG-hp-gDH" secondAttribute="bottom" constant="88" id="qMo-9t-ch2"/>
+                            <constraint firstItem="RnG-hp-gDH" firstAttribute="baseline" secondItem="GLq-6K-V6s" secondAttribute="baseline" id="ufS-oT-4o0"/>
+                            <constraint firstItem="RnG-hp-gDH" firstAttribute="leading" secondItem="ARS-7W-CSl" secondAttribute="trailing" constant="52" id="uyQ-ZI-Pwp"/>
+                            <constraint firstItem="GLq-6K-V6s" firstAttribute="leading" secondItem="RnG-hp-gDH" secondAttribute="trailing" constant="61" id="wUJ-DJ-4CJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstText" destination="2Kp-C4-z6b" id="fLq-1Z-X9q"/>
+                        <outlet property="resultLabel" destination="Hkq-vT-1B2" id="isN-M4-1qV"/>
+                        <outlet property="secondText" destination="ADh-zn-TUT" id="jr9-rM-2sE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75.572519083969468" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

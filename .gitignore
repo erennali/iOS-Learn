@@ -1,0 +1,25 @@
+# Xcode projeleri için yaygın .gitignore içerikleri
+
+# Derivasyon verileri
+DerivedData/
+
+# Xcode'un otomatik olarak oluşturduğu geçici dosyalar
+build/
+*.xcuserstate
+*.xccheckout
+*.xcworkspace
+
+# Xcode proje dosyaları
+*.xcodeproj/
+*.xcworkspace/
+
+# .idea (JetBrains IDE’leri için)
+.idea/
+
+# Sistem dosyaları
+.DS_Store
+*.swp
+
+# Sık kullanılan diğer dosyalar
+*.log
+*.DS_Store
