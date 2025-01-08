@@ -1,0 +1,21 @@
+# 📲 Firebase Config Dosyaları
+GoogleService-Info.plist
+google-services.json
+
+# 🛠️ Xcode Build Dosyaları
+DerivedData/
+*.xcworkspace
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+
+# 🚀 iOS Framework Dosyaları
+Carthage/
+Pods/
+*.xcconfig
+
+# 🔑 Gizli Anahtarlar ve Çevresel Değişken Dosyaları
+.env
+*.keychain
+
+# 🖼️ Resim ve Log Dosyaları
+*.log
